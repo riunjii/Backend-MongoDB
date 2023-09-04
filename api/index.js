@@ -4,8 +4,13 @@ const app = express()
 const port = 4000
 
 app.use(express.json()) //irá fazer o parse de arquivos json
+
 //rotas de conteudo publico
 app.use('/', express.static('public'))
+
+//configura o fivicon
+app.use('/favicon.ico', express.static('public/images/computer.png'))
+
 //rotas de api
 app.get('/api',(req,res) => {
     res.status(200).json({
