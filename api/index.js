@@ -15,7 +15,7 @@ app.use('/favicon.ico', express.static('public/images/computer.png'))
 app.get('/api',(req,res) => {
     res.status(200).json({
             message: 'API Fatec 100% funcional👍',
-            version: '1.0.0'
+            version: '1.0.1'
     })
 })
 //rota de excessão deve ser a ULTIMA!!!
